@@ -1,3 +1,13 @@
+.back_image_home {
+  background-image: url("../src/images/landing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }

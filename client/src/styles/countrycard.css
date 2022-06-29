@@ -1,0 +1,34 @@
+.country_card_container{
+    border: solid #000;
+    border-radius: 10%;
+    margin: 2px;
+    padding: 5px;
+    width: 300px;
+}
+.card_image{
+    border-radius: 20%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.button_card{
+    text-decoration: none;
+}
+
+.text_button_card{
+    text-decoration: none;
+}
+
+.header_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country_card_name_country{
+    width: min-content;
+    padding: 0;
+    margin: 0;
+}

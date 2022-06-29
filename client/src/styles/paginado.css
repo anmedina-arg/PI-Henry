@@ -1,0 +1,26 @@
+.nav_paginado {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.btn_paginado{
+    background-color: rgb(224, 157, 119);
+    border-radius: 50%;
+    text-align: center;
+    margin-top: auto;
+    height: 30px;
+    width: 30px;
+    margin-inline: 10px;
+}
+
+.btn_paginado:focus{
+    background-color: rgb(253, 243, 47);
+    color: #000;
+}
+
+.btn_paginado:hover{
+    background-color: rgb(253, 250, 191);
+    color: #000;
+}

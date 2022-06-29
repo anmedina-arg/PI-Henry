@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from "react-redux" // <-- a esta línea la agregué yo, debo envolver la aplicación en el provider
+                                        // El provider es el que le porvee el store a mi <App/> para que pueda acceder desde cualquier lado
+import store from "./store"; //<-- a esta línea de aquí la agregué yo XD
+import {BrowserRouter} from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </ Provider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

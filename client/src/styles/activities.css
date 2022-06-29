@@ -1,0 +1,67 @@
+.container_add_activity{
+    background-color: rgb(245, 61, 5);
+    border: 1px solid;
+    padding-bottom: 10%;
+}
+
+.title_addactivity{
+    font-size: 3rem;
+}
+
+.titles_activities{
+    font-weight: 700;
+    font-size: medium;
+}
+
+.validation{
+    background-color: #fff;
+    color: red;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 2px;
+    font-size: x-small;
+}
+
+.input_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select_country{
+    margin: 10px;
+}
+
+.select_country_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_unselected_country{
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 10px;
+}
+
+.label_country{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonForm{
+    font-size: medium;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.containerFieldsets{
+    margin: 10px;
+}
+
+.label_season{
+    margin-left: 10px;
+    margin-left: 10px;
+}
