@@ -8,7 +8,7 @@ const { uploadCountries } = require("./src/functions/uploadCountries");
 // Syncing all the models at once.
 conn.sync({ force: true })
   .then(() => {
-    server.listen(PORT, () => {
+    server.listen(PORT, "0.0.0.0", () => {
       uploadCountries(); // Llamar a la función que carga todos los países en la BD
       console.log(`%s listening at ${PORT}`); // eslint-disable-line no-console
     });
