@@ -6,6 +6,10 @@ import CountryDetail from './components/countryDetail';
 import AddActivity from './components/addActivity';
 import Home from './components/home';
 
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:3001/api'
+
 
 function App() {
   return (

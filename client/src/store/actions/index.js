@@ -10,7 +10,7 @@ export const RESET = "RESET";
 
 export function fetchCountry() {
     return function (dispatch) {
-        axios.get("http://localhost:3001/api/country") //aquí le pido a mi base de datos, no a la API
+        axios.get("/country") //aquí le pido a mi base de datos, no a la API
                                                         //la URL es bueno tenerla en una variable de entorno y luego concatenarla
         .then((country) => { //como esto es asincrónico, en vez de retornar el objeto, hago el dispatch. Esto nos lo da Redux-thunk
             dispatch({ //este dispatch es para despachar la acción, nos lo da redux-thunk
@@ -26,7 +26,7 @@ export function fetchCountry() {
 
 export function searchCountry(search) {
     return function (dispatch) {
-        axios.get(`http://localhost:3001/api/country/${search}` )
+        axios.get(`/country/${search}` )
         .then((country) => {
             dispatch({
                 type: SEARCH_COUNTRY,
@@ -55,7 +55,7 @@ export function filter(continents) {
 
 export function fetchActivities() {
     return function (dispatch) {
-        axios.get("http://localhost:3001/api/activity")
+        axios.get("/activity")
         .then((activity) => {
             dispatch({
                 type: FECTH_ACTIVITY,
@@ -70,7 +70,7 @@ export function fetchActivities() {
 
 export function addActivity () {
     return function (dispatch) {
-        axios.post("http://localhost:3001/api/activity")
+        axios.post("/activity")
         .then((activity) => {
             dispatch({
                 type: FECTH_ACTIVITY,
