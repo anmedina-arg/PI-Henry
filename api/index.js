@@ -1,8 +1,9 @@
 //import funcion-que-carga-paises-en-BD from ("./funciones")
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+require('dotenv').config();
 const { PORT } = process.env;
-const { uploadCountries } = require("./src/functions/uploadCountries")
+const { uploadCountries } = require("./src/functions/uploadCountries");
 
 // Syncing all the models at once.
 conn.sync({ force: true })
