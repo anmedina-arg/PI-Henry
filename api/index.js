@@ -5,9 +5,13 @@ const { PORT } = process.env;
 const { uploadCountries } = require("./src/functions/uploadCountries")
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
-  server.listen(PORT, () => {
-    uploadCountries// <-- llamar a la función que carga todos los paises en la BD
-    console.log(`%s listening at ${PORT}`); // eslint-disable-line no-console
+conn.sync({ force: true })
+  .then(() => {
+    server.listen(PORT, () => {
+      uploadCountries(); // Llamar a la función que carga todos los países en la BD
+      console.log(`%s listening at ${PORT}`); // eslint-disable-line no-console
+    });
+  })
+  .catch(err => {
+    console.error('Error syncing database:', err); // Manejo de errores al sincronizar la base de datos
   });
-});
