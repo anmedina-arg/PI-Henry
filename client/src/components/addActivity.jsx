@@ -46,7 +46,7 @@ export default function AddActivity () {
 function onSubmit (e) {
         e.preventDefault()
         if(Object.keys(errors).length === 0) {
-            axios.post("http://localhost:3001/api/activity",activity)
+            axios.post("/activity",activity)
             alert("Successfully")
             navigate("/home")
         } else {

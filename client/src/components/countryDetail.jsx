@@ -10,7 +10,7 @@ export default function CountryDetail () {
     let {name} = useParams()
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/api/country/${name}`)
+        axios.get(`/country/${name}`)
         .then((respuesta) => setCountryD(respuesta.data[0]))
         return setCountryD({})
     },[name])
